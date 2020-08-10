@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>French Defense</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono">
+    <link rel="stylesheet" href="../css/new.css">
+    <link rel="stylesheet" href="../css/chessboard-1.0.0.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/chessboard-1.0.0.js"></script>
+</head>
+<body>
+<header>
+    <h2><a href="../french.html">back</a> C02 Advance, Steinitz Variation</h2>
+</header>
+<main>
+1. e4 e6 2. d4 d5 3. e5 c5 4. dxc5 Nc6 5. Nf3 Bxc5 6. Bd3 Qc7 7. Qe2 Nge7
+<div id="board1" style="width: 400px"></div>
+</main>
+
+<script>
+var board1 = Chessboard('board1', {
+  position: 'r1b1k2r/ppq1nppp/2n1p3/2bpP3/8/3B1N2/PPP1QPPP/RNB1K2R',
+  showNotation: true,
+  orientation: 'black'
+})
+</script>
+</body>
