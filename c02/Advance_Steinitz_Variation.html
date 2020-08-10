@@ -22,18 +22,32 @@
     </nav>
 </header>
 <main>
-1. e4 e6 2. d4 d5 3. e5 c5 4. dxc5 Nc6 5. Nf3 Bxc5 6. Bd3 Qc7 7. Qe2 Nge7
+<p>1. e4 e6 2. d4 d5 3. e5 c5 4. dxc5 Nc6 5. Nf3 Bxc5</p>
 <div id="board1" class="small-board"></div>
+<p>6. Bd3 Qc7 (pressure on e5)</p>
+<div id="board2" class="small-board"></div>
+<p>7. Qe2 Nge7</p>
+<div id="board3" class="small-board"></div>
 </main>
 
 <script>
 var board1 = Chessboard('board1', {
-  position: 'r1b1k2r/ppq1nppp/2n1p3/2bpP3/8/3B1N2/PPP1QPPP/RNB1K2R',
-  draggable: true,
-  dropOffBoard: 'trash',
+  position: 'r1bqk1nr/pp3ppp/2n1p3/2bpP3/8/5N2/PPP2PPP/RNBQKB1R',
   showNotation: true,
   orientation: 'black'
 })
-$(window).resize(board1.resize)
+var board2 = Chessboard('board2', {
+  position: 'r1b1k1nr/ppq2ppp/2n1p3/2bpP3/8/3B1N2/PPP2PPP/RNBQK2R',
+  showNotation: true,
+  orientation: 'black'
+})
+var board3 = Chessboard('board3', {
+  position: 'r1b1k2r/ppq1nppp/2n1p3/2bpP3/8/3B1N2/PPP1QPPP/RNB1K2R',
+  showNotation: true,
+  orientation: 'black'
+})
+
+
+// $(window).resize(board1.resize)
 </script>
 </body>
