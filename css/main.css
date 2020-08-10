@@ -1,0 +1,21 @@
+ul {
+  list-style-type: none;
+}
+
+.small-board {
+  display: inline-block;
+  margin-right: 5px;
+  width: 200px;
+}
+
+.medium-board {
+  display: inline-block;
+  margin-right: 5px;
+  width: 300px;
+}
+
+.large-board {
+  display: inline-block;
+  margin-right: 10px;
+  width: 400px;
+}
