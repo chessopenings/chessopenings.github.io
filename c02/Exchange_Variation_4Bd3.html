@@ -15,7 +15,7 @@
 </head>
 <body>
 <header>
-    <h1>C02 Advance, Steinitz Variation</h1>
+    <h1>C02 Exchange Variation 4. Bd3</h1>
     <nav>
         <a href="/index.html" class="breadcrumbs">Home</a>
         /
@@ -23,29 +23,38 @@
     </nav>
 </header>
 <main>
-<p class="moves">1. e4 e6 2. d4 d5 3. e5 c5 4. dxc5 Nc6 5. Nf3 Bxc5</p>
+<p class="moves">1. e4 e6 2. d4 d5 3. exd5 exd5 4. Bd3 Nc6</p>
 <div id="board1" class="small-board"></div>
-<p class="moves">6. Bd3 Qc7 (pressure on e5)</p>
+<p class="moves">5. c3 Bd6 6. Ne2 Qf6 (support the f-column)</p>
 <div id="board2" class="small-board"></div>
-<p class="moves">7. Qe2 Nge7</p>
+<p class="moves">7. Nd2 Bf5 8. Nf3 h6</p>
 <div id="board3" class="small-board"></div>
+<p class="moves">9. Bf4 Bxd3 10. Bxd6 Be4 11. Bxc7 Bxf3 12. gxf3 Qxf3 13. Rg1 Nge7</p>
+<div id="board4" class="small-board"></div>
 </main>
 
 <script>
 var board1 = Chessboard('board1', {
-  position: 'r1bqk1nr/pp3ppp/2n1p3/2bpP3/8/5N2/PPP2PPP/RNBQKB1R',
+  position: 'r1bqkbnr/ppp2ppp/2n5/3p4/3P4/3B4/PPP2PPP/RNBQK1NR',
   showNotation: true,
   orientation: 'black'
 })
 var board2 = Chessboard('board2', {
-  position: 'r1b1k1nr/ppq2ppp/2n1p3/2bpP3/8/3B1N2/PPP2PPP/RNBQK2R',
+  position: 'r1b1k1nr/ppp2ppp/2nb1q2/3p4/3P4/2PB4/PP2NPPP/RNBQK2R',
   showNotation: true,
   orientation: 'black'
 })
 var board3 = Chessboard('board3', {
-  position: 'r1b1k2r/ppq1nppp/2n1p3/2bpP3/8/3B1N2/PPP1QPPP/RNB1K2R',
+  position: 'r3k1nr/ppp2pp1/2nb1q1p/3p1b2/3P4/2PB1N2/PP2NPPP/R1BQK2R',
   showNotation: true,
   orientation: 'black'
 })
+var board3 = Chessboard('board3', {
+  position: 'r3k2r/ppB1npp1/2n4p/3p4/3P4/2P2q2/PP2NP1P/R2QK1R1',
+  showNotation: true,
+  orientation: 'black'
+})
+
+// $(window).resize(board1.resize)
 </script>
 </body>

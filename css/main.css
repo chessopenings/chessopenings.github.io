@@ -2,6 +2,16 @@ ul {
   list-style-type: none;
 }
 
+.breadcrumbs {
+  text-decoration: none;
+  background-color: #ffe831;
+}
+
+
+.moves {
+  padding-top: 1em;
+}
+
 .small-board {
   display: inline-block;
   margin-right: 5px;
